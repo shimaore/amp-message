@@ -4,7 +4,7 @@
  */
 
 var fmt = require('util').format;
-var amp = require('amp');
+var amp = require('@shimaore/amp');
 
 /**
  * Proxy methods.
@@ -117,13 +117,13 @@ function pack(arg) {
   if (Buffer.isBuffer(arg)) return arg;
 
   // string
-  if ('string' == typeof arg) return new Buffer('s:' + arg);
+  if ('string' == typeof arg) return new Buffer.from('s:' + arg);
 
   // undefined
   if (arg === undefined) arg = null;
 
   // json
-  return new Buffer('j:' + JSON.stringify(arg));
+  return new Buffer.from('j:' + JSON.stringify(arg));
 }
 
 /**
