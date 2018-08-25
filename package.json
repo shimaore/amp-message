@@ -1,6 +1,6 @@
 {
   "name": "@shimaore/amp-message",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "repository": "gitlab:shimaore/amp-message",
   "description": "Higher level Message object for the AMP protocol",
   "scripts": {
